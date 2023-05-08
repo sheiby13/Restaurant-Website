@@ -203,6 +203,17 @@
     background-color: var(--gold-crayola);
     color: var(--black);
   }
+
+ /*** RESERVATION*/
+
+  .reservation .input-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+  }
+
+  
+
 }
 
 /*** responsive for larger than 992px screen*/
@@ -282,6 +293,13 @@
     max-width: 910px;
     margin-inline: auto;
   }
+
+  /*** RESERVATION*/
+  .reservation-form {
+    display: grid;
+    grid-template-columns: 1fr 0.5fr;
+  }
+
 
 }
 
