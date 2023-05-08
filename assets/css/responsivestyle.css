@@ -277,6 +277,12 @@
     border-inline-start: 1px solid var(--white-alpha-20);
   }
 
+  /*** TESTIMONIALS*/
+  .testi-text {
+    max-width: 910px;
+    margin-inline: auto;
+  }
+
 }
 
 
@@ -405,6 +411,12 @@
     gap: 55px 200px;
     margin-block-end: 55px;
   }
+
+  /*** TESTIMONIALS*/
+  .form-left,
+  .form-right { 
+    padding: 75px 60px; 
+  }
   
   
 }  
@@ -427,5 +439,5 @@
     top: 46%;
     left: 0;
   }
-  
+
 }  
