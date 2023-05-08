@@ -96,6 +96,24 @@
     max-width: 420px;
     margin-inline: auto;
   }
+
+  /*** ABOUT*/
+
+   .about .container { 
+    gap: 80px; 
+  }
+
+   .about-banner > .w-100 { 
+    padding-inline-start: 90px; 
+  }
+ 
+   .about .abs-img-1 { 
+    width: 285px; 
+  }
+ 
+   .about .contact-number { 
+    --fontSize-body-1: 2.4rem; 
+  }
 }
 
 
@@ -172,9 +190,13 @@
   }
   
   /*** REUSED STYLE*/
-  :is(.service, .event) .container { max-width: unset; }
+  :is(.service, .event) .container { 
+    max-width: unset; 
+  }
   
-  :is(.service, .event) .grid-list { grid-template-columns: repeat(3, 1fr); }
+  :is(.service, .event) .grid-list { 
+    grid-template-columns: repeat(3, 1fr); 
+  }
   
   :is(.service, .event) .grid-list li:last-child {
     grid-column: auto;
@@ -205,6 +227,14 @@
     top: 0;
     right: 0;
   }
+
+  /*** ABOUT */
+
+  .about .container {
+    grid-template-columns: 0.7fr 1fr;
+    gap: 30px;
+  }
+
 }
 
 
@@ -259,10 +289,10 @@
     margin-inline: auto 20px; 
   }
   
-    .navbar-list {
-      display: flex;
-      gap: 30px;
-    }
+  .navbar-list {
+    display: flex;
+    gap: 30px;
+  }
   
   .navbar-item { 
     border-block-start: none; 
@@ -317,6 +347,18 @@
   .service .section-text { 
     margin-block-end: 75px; 
   }
+
+  /*** ABOUT*/
+
+  .about { 
+    padding-block: 170px 100px; 
+  }
+
+  .about .shape {
+    display: block;
+    top: 46%;
+    left: 0;
+  }
   
 }  
 
@@ -326,5 +368,17 @@
   /*** HEADER*/
   .navbar { 
     margin-inline: auto; 
+  }
+
+  /*** ABOUT*/
+
+  .about-content { 
+    padding-inline-end: 90px; 
+  }
+
+  .about .shape {
+    display: block;
+    top: 46%;
+    left: 0;
   }
 }  
