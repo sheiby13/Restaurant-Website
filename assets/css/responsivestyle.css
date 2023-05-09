@@ -433,6 +433,12 @@
   .form-right { 
     padding: 75px 60px; 
   }
+
+  /*** FEATURES*/
+
+  .features .grid-list { 
+    grid-template-columns: repeat(4, 1fr); 
+  }
   
   
 }  
@@ -453,6 +459,26 @@
   .about .shape {
     display: block;
     top: 46%;
+    left: 0;
+  }
+
+  /*** FEATURES*/
+
+  .features { 
+    overflow: visible; 
+  }
+
+  .features .shape { 
+    display: block; 
+  }
+ 
+  .features .shape-1 {
+    top: -100px;
+    right: 0;
+  }
+ 
+  .features .shape-2 {
+    bottom: 80px;
     left: 0;
   }
 

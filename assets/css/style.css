@@ -1201,11 +1201,11 @@ body.nav-active {
 \*-----------------------------------*/
 
 .reservation-form { 
-    margin-block-start: -270px; 
+  margin-block-start: -270px; 
 }
 
 .form-text { 
-    margin-block-end: 40px; 
+  margin-block-end: 40px; 
 }
 
 .form-text .link {
@@ -1214,11 +1214,11 @@ body.nav-active {
 }
 
 .form-right .headline-1 { 
-    margin-block-end: 40px; 
+  margin-block-end: 40px; 
 }
 
 .form-right .contact-label { 
-    margin-block-end: 5px; 
+  margin-block-end: 5px; 
 }
 
 .form-right .separator { 
@@ -1231,12 +1231,12 @@ body.nav-active {
 }
 
 .form-right .body-4:not(:last-child) { 
-    margin-block-end: 25px; 
+  margin-block-end: 25px; 
 }
 
 .form-left,
 .form-right { 
-    padding: 40px 20px 30px; 
+  padding: 40px 20px 30px; 
 }
 
 .input-field[type="date"] {
@@ -1245,7 +1245,7 @@ body.nav-active {
 }
 
 .input-field[type="date"]::-webkit-calendar-picker-indicator { 
-    opacity: 0; 
+  opacity: 0; 
 }
 
 textarea.input-field {
