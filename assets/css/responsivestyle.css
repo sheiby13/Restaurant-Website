@@ -212,7 +212,6 @@
     column-gap: 20px;
   }
 
-  
 
 }
 
@@ -241,7 +240,6 @@
     grid-column: auto;
     width: 100%;
   }
-  
   
   /*** TOPBAR*/
   .topbar-item:not(.link) { 
