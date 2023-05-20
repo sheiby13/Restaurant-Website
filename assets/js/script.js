@@ -134,4 +134,29 @@ addEventOnElements([heroSliderNextBtn, heroSliderPrevBtn], "mouseout", autoSlide
 window.addEventListener("load", autoSlide); // Запуск автоматичної прокрутки при завантаженні сторінки
 
 
+/*** PARALLAX EFFECT*/
 
+// Отримання посилань на елементи з атрибутом "data-parallax-item"
+const parallaxItems = document.querySelectorAll("[data-parallax-item]");
+
+let x, y;
+
+// Додавання обробника події "mousemove" до вікна
+window.addEventListener("mousemove", function (event) {
+  // Отримання координат курсора миші відносно вікна
+  x = (event.clientX / window.innerWidth * 10) - 5;
+  y = (event.clientY / window.innerHeight * 10) - 5;
+
+  // Реверс числа, наприклад, 20 стає -20, -5 стає 5
+  x = x - (x * 2);
+  y = y - (y * 2);
+
+  // Прохід по всіх елементах з атрибутом "data-parallax-item"
+  for (let i = 0, len = parallaxItems.length; i < len; i++) {
+    // Множення координат на швидкість паралаксу, отриману з атрибута "data-parallax-speed"
+    x = x * Number(parallaxItems[i].dataset.parallaxSpeed);
+    y = y * Number(parallaxItems[i].dataset.parallaxSpeed);
+    // Застосування перетворення до стилю "transform" елемента
+    parallaxItems[i].style.transform = `translate3d(${x}px, ${y}px, 0px)`;
+  }
+});
