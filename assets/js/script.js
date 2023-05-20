@@ -97,6 +97,7 @@ const slideNext = function () {
 
 heroSliderNextBtn.addEventListener("click", slideNext);
 
+// Функція для перемикання до попереднього слайда
 const slidePrev = function () {
   if (currentSlidePos <= 0) {
     currentSlidePos = heroSliderItems.length - 1;
@@ -106,7 +107,31 @@ const slidePrev = function () {
 
   updateSliderPos();
 }
-
+// Додавання обробника події "click" до кнопки "Попередній слайд"
 heroSliderPrevBtn.addEventListener("click", slidePrev);
+
+/*** auto slide*/
+
+// Змінна для зберігання інтервалу автоматичної прокрутки
+let autoSlideInterval;
+
+// Функція для автоматичної прокрутки до наступного слайда
+const autoSlide = function () {
+  autoSlideInterval = setInterval(function () {
+    slideNext();
+  }, 7000);
+}
+
+// Додавання обробника події "mouseover" до кнопок "Наступний слайд" і "Попередній слайд"
+addEventOnElements([heroSliderNextBtn, heroSliderPrevBtn], "mouseover", function () {
+  clearInterval(autoSlideInterval); // Зупинка автоматичної прокрутки при наведенні на кнопки
+});
+
+// Додавання обробника події "mouseout" до кнопок "Наступний слайд" і "Попередній слайд"
+addEventOnElements([heroSliderNextBtn, heroSliderPrevBtn], "mouseout", autoSlide); // Відновлення автоматичної прокрутки після відведення курсора від кнопок
+
+// Додавання обробника події "load" до вікна
+window.addEventListener("load", autoSlide); // Запуск автоматичної прокрутки при завантаженні сторінки
+
 
 
