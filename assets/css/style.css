@@ -20,6 +20,7 @@
   --black: hsla(0, 0%, 0%, 1);
   --black-alpha-80: hsla(0, 0%, 0%, 0.8);
   --black-alpha-15: hsla(0, 0%, 0%, 0.15);
+  --light-mode: rgb(146, 128, 128);
   
   /** GRADIENT COLOR*/
   --loading-text-gradient: linear-gradient(90deg, transparent 0% 16.66%, var(--smoky-black-3) 33.33% 50%,  transparent 66.66% 75%);
@@ -1548,4 +1549,62 @@ textarea.input-field {
   border-radius: 12px;
   padding: 10px 32px;
   cursor: pointer;
+}
+
+/*-----------------------------------*\
+  SWITCH MODE
+\*-----------------------------------*/
+
+.toggle {
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 120px;
+  height: 60px;
+  border-radius: 50px;
+  transition: .2s;
+}
+
+.toggle i {
+  width: 50%;
+  line-height: 60px;
+  text-align: center;
+  font-size: 30px;
+  z-index: 1;
+}
+
+.toggle .ball {
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  margin: 7.5px;
+  border-radius: 50%;
+  transition: .3s ease-out;
+}
+input {
+  display: none;
+}
+/*
+-- Light Mode --*/
+
+.light {
+  background: var(--light-mode);
+}
+
+.light .toggle {
+  background: linear-gradient(145deg, #e1e1e1, #ececec);
+  box-shadow: 3px 3px 4px #e6e6e6, -3px -3px 4px #ececec;
+}
+
+.light .toggle .bxs-sun {
+  color: var(--light-mode)
+}
+
+.light .toggle .bx-moon {
+  color: #151d2a;
+}
+
+.light .toggle .ball {
+  background: #151d2a;
 }

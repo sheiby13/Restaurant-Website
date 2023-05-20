@@ -162,7 +162,8 @@ window.addEventListener("mousemove", function (event) {
 });
 
 
-/*** Pop UP*/
+/*** POPUP*/
+
 const modal = document.querySelector('.modal');
 const modalOverlay = document.querySelector('.modal__overlay');
 const closeBtn = document.querySelector('.modal__close-btn');
@@ -195,4 +196,19 @@ closeBtn.addEventListener('click', () => {
 discountBtn.addEventListener('click', () => {
   modal.classList.remove('active');
   modalOverlay.classList.remove('active');
+});
+
+/*** SWITCH MODE*/
+
+const body = document.querySelector("body"); // Посилання на елемент <body>
+const toggle = document.querySelector("#toggle");// Посилання  на елемент перемикача
+const sunIcon = document.querySelector(".toggle .bxs-sun");// Посилання  на елемент іконки сонця
+const moonIcon = document.querySelector(".toggle .bx-moon");// Посилання  на елемент іконки місяця
+
+// Додавання обробника подій до перемикача
+toggle.addEventListener("change", () => {  
+  body.classList.toggle("light");// Перемикає клас "light" у елементі body для зміни між світлим та темним режимами
+  // Перемикає класи іконок для відображення відповідної іконки сонця або місяця залежно від поточної теми
+  sunIcon.className = sunIcon.className == "bx bxs-sun" ? "bx bx-sun" : "bx bxs-sun";
+  moonIcon.className = moonIcon.className == "bx bxs-moon" ? "bx bx-moon" : "bx bxs-moon";
 });

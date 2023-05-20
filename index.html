@@ -12,6 +12,8 @@
   
   <!--- favicon-->
   <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+  <!-- BoxIcons v2.1.2 -->
+    <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet">
 
   <!--- google font link -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -132,6 +134,12 @@
         <span class="text text-1">Find A Table</span>
         <span class="text text-2" aria-hidden="true">Find A Table</span>
       </a>
+      <input type="checkbox" id="toggle">
+        <label class="toggle" for="toggle">
+          <i class="bx bxs-sun"></i>
+          <i class="bx bx-moon"></i>
+          <span class="ball"></span>
+        </label>
       <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
         <span class="line line-1"></span>
         <span class="line line-2"></span>
@@ -565,7 +573,7 @@
       </section>
     </article>
 </main>
- <!--- #FOOTER-->
+<!--- #FOOTER-->
   <footer class="footer section has-bg-image text-center"
     style="background-image: url('./assets/images/footer-bg.jpg')">
     <div class="container">
@@ -591,16 +599,6 @@
           <p class="label-1">
             Subscribe us & Get <span class="span">35% Off.</span>
           </p>
-          <form action="" class="input-wrapper">
-            <div class="icon-wrapper">
-              <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
-              <input type="email" name="email_address" placeholder="Your email" autocomplete="off" class="input-field">
-            </div>
-            <button type="submit" class="btn btn-secondary">
-              <span class="text text-1">Subscribe</span>
-              <span class="text text-2" aria-hidden="true">Subscribe</span>
-            </button>
-          </form>
         </div>
         <ul class="footer-list">
           <li>
@@ -646,29 +644,29 @@
   <a href="#top" class="back-top-btn active" aria-label="back to top" data-back-top-btn>
     <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
   </a>
-<!--- #POPUP-->
-<!-- font-awesome-->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
-<!---->
-<div class="modal__overlay"></div>
-<div class="modal">
- <div class="modal__close-btn">
-   <i class="fa-solid fa-xmark"></i>
- </div>
- <div class="modal__left">
-   <p>Special<span>Discount</span></p>
-   <div class="modal__discount">
-     <p>Save up to<span>45%</span></p>
-   </div>
- </div>
- <div class="modal__right">
-   <p class="modal__text">
-     So delicious <br />
-     valid only today
-   </p>
-   <a class="modal__button">Get Discount</a>
- </div>
-</div>
+  <!--- #POPUP-->
+  <!-- font-awesome-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+  <!---->
+  <div class="modal__overlay"></div>
+  <div class="modal">
+  <div class="modal__close-btn">
+    <i class="fa-solid fa-xmark"></i>
+  </div>
+  <div class="modal__left">
+    <p>Special<span>Discount</span></p>
+    <div class="modal__discount">
+      <p>Save up to<span>45%</span></p>
+    </div>
+  </div>
+  <div class="modal__right">
+    <p class="modal__text">
+      So delicious <br />
+      valid only today
+    </p>
+    <a class="modal__button">Get Discount</a>
+  </div>
+  </div>
 <!--- ionicon link -->
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
